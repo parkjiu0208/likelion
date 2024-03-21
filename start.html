@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEV_JIU</title>
+</head>
+<body>
+    <header>
+        <h1>박지우의 개발 블로그입니다.</h1>
+        <h3>데이터&백엔드 개발자입니다.</h3>
+        <hr>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="https://github.com/parkjiu0208"> 깃허브</a></li>
+            <li><a href="https://parkjiu.tistory.com/"> 티스토리</a></li>
+            <li><a href="https://www.linkedin.com/in/%EC%A7%80%EC%9A%B0-%EB%B0%95-16167b23b/"> 링크드인</a></li>
+            <li><a href="https://www.instagram.com/mydog_is_eraser/"> 인스타그램</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form>
+            <fieldset>
+                <legend>하고 싶은 말을 남겨주세요</legend>
+                <table border="1">
+                    <tr>
+                        <th><label for="이름">이름</label></th>
+                        <td colspan="2"><input type="text" id = "이름"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="회사명">회사명</label></th>
+                        <td colspan="2"><input type="text" id="회사명"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="궁금한 점">궁금한 점</label></th>
+                        <td colspan="2"><input type="text" id="궁금한 점"></td>
+                    </tr>
+                    <tr>
+                        <th>유형 선택</th>
+                        <td colspan="2">
+                            <label for="question">질문</label>
+                            <input type="radio" name="question" id="Q">
+                            <label for="question">제안</label>
+                            <input type="radio" name="suggestion" id="S">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>회사 유형</th>
+                        <td colspan="2"><select >
+                            <option>IT 기업</option>
+                            <option>마케팅 기업</option>
+                            <option>기타</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">필요한 기술스택</th>
+                        <td><input type="checkbox" name="python" id="python"><label for="python">python</label></td>
+                        <td><input type="checkbox" name="java" id="java"><label for="java">java</label></td>
+                    </tr>
+                    <tr>
+                        <!-- <td><input type="checkbox" name="airflow" id="airflow"><label for="airflow">airflow</label></td> -->
+                        <td><input type="checkbox" name="SQL" id="SQL"><label for="SQL">SQL</label></td>
+                        <td><input type="checkbox" name="spark" id="spark"><label for="spark">spark</label><br></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="reset" value="초기화"></td>
+                        <td><input type="submit" value="제출"></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
